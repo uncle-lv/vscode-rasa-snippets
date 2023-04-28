@@ -1,0 +1,36 @@
+{
+    "nlu": {
+        "prefix": ["nlu"],
+        "body": [
+            "nlu:",
+            "- intent: $1",
+            "  examples: |",
+            "    - $2"
+        ],
+        "description": "NLU training data",
+        "scope": "yaml"
+    },
+    
+    "nlu lookup": {
+        "prefix": ["nll", "nlu lookup"],
+        "body": [
+            "nlu:",
+            "- lookup: $1",
+            "  examples: |",
+            "    - $2"
+        ],
+        "description": "lookup table",
+        "scope": "yaml"
+    },
+
+    "synonym": {
+        "prefix": ["-synonym"],
+        "body": [
+            "- synonym: $1",
+            "  examples: |",
+            "    - $2"
+        ],
+        "description": "synonym",
+        "scope": "yaml"
+    }
+}

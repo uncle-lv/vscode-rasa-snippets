@@ -1,0 +1,56 @@
+{
+  "name": "rasa-snippets",
+  "displayName": "rasa snippets",
+  "description": "a yaml snippets extension for rasa",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "yaml",
+        "path": "./snippets/common.code-snippets"
+      },
+      {
+        "language": "yaml",
+        "path": "./snippets/config.code-snippets"
+      },
+      {
+        "language": "yaml",
+        "path": "./snippets/credentials.code-snippets"
+      },
+      {
+        "language": "yaml",
+        "path": "./snippets/domain.code-snippets"
+      },
+      {
+        "language": "yaml",
+        "path": "./snippets/endpoints.code-snippets"
+      },
+      {
+        "language": "yaml",
+        "path": "./snippets/nlu.code-snippets"
+      },
+      {
+        "language": "yaml",
+        "path": "./snippets/responses.code-snippets"
+      },
+      {
+        "language": "yaml",
+        "path": "./snippets/rules.code-snippets"
+      },
+      {
+        "language": "yaml",
+        "path": "./snippets/slot.code-snippets"
+      },
+      {
+        "language": "yaml",
+        "path": "./snippets/stories.code-snippets"
+      }
+    ]
+  }
+}

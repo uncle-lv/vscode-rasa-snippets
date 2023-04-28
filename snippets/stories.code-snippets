@@ -1,0 +1,35 @@
+{
+    "stories": {
+        "prefix": ["stories"],
+        "body": [
+            "stories:",
+            "- story: $1",
+            "  steps:",
+            "    - intent: $2",
+            "    - action: $3"
+        ],
+        "description": "stories",
+        "scope": "yaml"
+    },
+    
+    "checkpoint": {
+        "prefix": ["-checkpoint"],
+        "body": [
+            "- checkpoint: $1",
+            "- intent: $2",
+            "- action: $3"
+        ],
+        "description": "checkpoint",
+        "scope": "yaml"
+    },
+
+    "or": {
+        "prefix": ["-or"],
+        "body": [
+            "- or:",
+            "  $1"
+        ],
+        "description": "or",
+        "scope": "yaml"
+    }
+}

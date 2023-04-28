@@ -1,0 +1,156 @@
+{
+    "recipe": {
+        "prefix": ["recipe"],
+        "body": [
+            "recipe: ${1:default.v1}"
+        ],
+        "description": "recipe",
+        "scope": "yaml"
+    },
+
+    "assistant id": {
+        "prefix": ["assistant_id"],
+        "body": [
+            "assistant_id: $UUID"
+        ],
+        "description": "assistant id",
+        "scope": "yaml"
+    },
+
+    "language": {
+        "prefix": ["language"],
+        "body": [
+            "language: ${1:zh}"
+        ],
+        "description": "language",
+        "scope": "yaml"
+    },
+
+    "pipeline": {
+        "prefix": ["pipeline"],
+        "body": [
+            "pipeline:",
+            "  - name: $1"
+        ],
+        "description": "pipeline",
+        "scope": "yaml"
+    },
+
+    "policies": {
+        "prefix": ["policies"],
+        "body": [
+            "policies:",
+            "  - name: ${1:MemoizationPolicy}"
+        ],
+        "description": "policies",
+        "scope": "yaml"
+    },
+
+    "min ngram": {
+        "prefix": ["minn", "min_ngram"],
+        "body": [
+            "min_ngram: ${1:1}"
+        ],
+        "description": "min ngram",
+        "scope": "yaml"
+    },
+
+    "max ngram": {
+        "prefix": ["maxn", "max_ngram"],
+        "body": [
+            "max_ngram: ${1:4}"
+        ],
+        "description": "max ngram",
+        "scope": "yaml"
+    },
+
+    "analyzer": {
+        "prefix": ["analyzer"],
+        "body": [
+            "analyzer: ${1:char_wb}"
+        ],
+        "description": "analyzer",
+        "scope": "yaml"
+    },
+
+    "embeddings": {
+        "prefix": ["embeddings"],
+        "body": [
+            "embeddings: $1"
+        ],
+        "description": "embeddings",
+        "scope": "yaml"
+    },
+
+    "model name": {
+        "prefix": ["modn", "model_name"],
+        "body": [
+            "model_name: $1"
+        ],
+        "description": "model name",
+        "scope": "yaml"
+    },
+
+    "model weights": {
+        "prefix": ["modw", "model_weights"],
+        "body": [
+            "model_weights: $1"
+        ],
+        "description": "model weights",
+        "scope": "yaml"
+    },
+
+    "epochs": {
+        "prefix": ["epochs"],
+        "body": [
+            "epochs: ${1:100}"
+        ],
+        "description": "epochs",
+        "scope": "yaml"
+    },
+
+    "learning rate": {
+        "prefix": ["lear", "learning_rate"],
+        "body": [
+            "learning_rate: ${1:0.001}"
+        ],
+        "description": "learning rate",
+        "scope": "yaml"
+    },
+
+    "threshold": {
+        "prefix": ["threshold"],
+        "body": [
+            "threshold: ${1:0.3}"
+        ],
+        "description": "threshold",
+        "scope": "yaml"
+    },
+
+    "ambiguity threshold": {
+        "prefix": ["ambiguity_threshold"],
+        "body": [
+            "ambiguity_threshold: ${1:0.1}"
+        ],
+        "description": "ambiguity threshold",
+        "scope": "yaml"
+    },
+
+    "tensorboard log directory": {
+        "prefix": ["tld", "tensld", "tenslogd", "tensorboard_log_directory"],
+        "body": [
+            "tensorboard_log_directory: $1"
+        ],
+        "description": "tensorboard log directory",
+        "scope": "yaml"
+    },
+
+    "max history": {
+        "prefix": ["maxh", "mhistory", "max_history"],
+        "body": [
+            "max_history: ${1:5}"
+        ],
+        "description": "max history",
+        "scope": "yaml"
+    }
+}

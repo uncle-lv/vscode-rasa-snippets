@@ -1,0 +1,74 @@
+{
+    "slot type text": {
+        "prefix": ["text"],
+        "body": [
+            "text"
+        ],
+		"description": "slot type",
+		"scope": "yaml"
+    },
+
+    "slot type bool": {
+        "prefix": ["bool"],
+        "body": [
+            "bool"
+        ],
+		"description": "slot type",
+		"scope": "yaml"
+    },
+
+    "slot type categorical": {
+        "prefix": ["categorical"],
+        "body": [
+            "categorical"
+        ],
+		"description": "slot type",
+		"scope": "yaml"
+    },
+
+    "slot type float": {
+        "prefix": ["float"],
+        "body": [
+            "float"
+        ],
+		"description": "slot type",
+		"scope": "yaml"
+    },
+
+    "slot type list": {
+        "prefix": ["list"],
+        "body": [
+            "list"
+        ],
+		"description": "slot type",
+		"scope": "yaml"
+    },
+
+    "slot type any": {
+        "prefix": ["any"],
+        "body": [
+            "any"
+        ],
+		"description": "slot type",
+		"scope": "yaml"
+    },
+
+    "influence conversation": {
+        "prefix": ["infc", "influence_conversation"],
+        "body": [
+            "influence_conversation: ${1:false}"
+        ],
+		"description": "influence conversation",
+		"scope": "yaml"
+    },
+
+    "mappings": {
+        "prefix": ["mappings"],
+        "body": [
+            "mappings:",
+            "  -type: $1"
+        ],
+		"description": "mappings",
+		"scope": "yaml"
+    }
+}

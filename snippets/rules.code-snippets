@@ -1,0 +1,45 @@
+{
+    "rules": {
+        "prefix": ["rules"],
+        "body": [
+            "rules:",
+            "- rule: $1",
+            "  steps:",
+            "    - intent: $2",
+            "    - action: $3"
+        ],
+        "description": "rules",
+        "scope": "yaml"
+    },
+
+    "rule": {
+        "prefix": ["-rule"],
+        "body": [
+            "- rule: $1",
+            "  steps:",
+            "    - intent: $2",
+            "    - action: $3"
+        ],
+        "description": "rule",
+        "scope": "yaml"
+    },
+
+    "condition": {
+        "prefix": ["condition"],
+        "body": [
+            "condition:",
+            "  $1"
+        ],
+        "description": "condition",
+        "scope": "yaml"
+    },
+
+    "wait for user input": {
+        "prefix": ["wfui", "waitf", "wait_for_user_input"],
+        "body": [
+            "wait_for_user_input: ${1:false}"
+        ],
+        "description": "wait for user input",
+        "scope": "yaml"
+    }
+}

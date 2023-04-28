@@ -1,0 +1,31 @@
+{
+    "responses": {
+        "prefix": ["responses"],
+        "body": [
+            "responses:",
+            "  utter_$2:",
+            "  - text: \"$3\""
+        ],
+        "description": "responses",
+        "scope": "yaml"
+    },
+
+    "responses text": {
+        "prefix": ["-text"],
+        "body": [
+            "- text: \"$1\""
+        ],
+        "description": "responses text",
+        "scope": "yaml"
+    },
+
+    "utter": {
+        "prefix": ["utter"],
+        "body": [
+            "utter_$1:",
+            "  - text: $2"
+        ],
+		"description": "utter",
+		"scope": "yaml"
+    }
+}

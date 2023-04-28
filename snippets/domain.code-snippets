@@ -1,0 +1,69 @@
+{
+    "intents": {
+        "prefix": ["intents"],
+        "body": [
+            "intents:",
+            "  - $1"
+        ],
+		"description": "intents",
+		"scope": "yaml"
+    },
+
+    "entities": {
+        "prefix": ["entities"],
+        "body": [
+            "entities:",
+            "  - $1"
+        ],
+		"description": "entities",
+		"scope": "yaml"
+    },
+
+    "forms": {
+        "prefix": ["forms"],
+        "body": [
+            "forms:",
+            "  $1:",
+            "   required_slots:",
+            "   - $2"
+        ],
+        "description": "forms",
+        "scope": "yaml"
+    },
+
+    "actions": {
+        "prefix": ["actions"],
+        "body": [
+            "actions:",
+            "  - $1"
+        ],
+		"description": "actions",
+		"scope": "yaml"
+    },
+
+    "slots": {
+        "prefix": ["slots"],
+        "body": [
+            "slots:",
+            "  $1:",
+            "    type: $2",
+            "    influence_conversation: ${3:false}",
+            "    mappings:",
+            "      - entity: $4",
+            "        type: ${5:from_entity}"
+        ],
+		"description": "actions",
+		"scope": "yaml"
+    },
+
+    "session_config": {
+        "prefix": ["session"],
+        "body": [
+            "session_config:",
+            "  session_expiration_time: ${1:60}",
+            "  carry_over_slots_to_new_session: ${2:true}"
+        ],
+		"description": "session_config",
+		"scope": "yaml"
+    }
+}
