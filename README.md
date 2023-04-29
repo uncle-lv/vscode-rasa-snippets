@@ -1,65 +1,45 @@
-# rasa-snippets README
+# Rasa Snippets
 
-"rasa-snippets". After writing up a brief description, we recommend including the following sections.
+![Rasa Version](https://img.shields.io/badge/Rasa-3.x-%235a17ee) ![license](https://img.shields.io/github/license/uncle-lv/vscode-rasa-snippets) ![stars](https://img.shields.io/github/stars/uncle-lv/vscode-rasa-snippets) ![open issues](https://img.shields.io/github/issues-raw/uncle-lv/vscode-rasa-snippets) ![forks](https://img.shields.io/github/forks/uncle-lv/vscode-rasa-snippets)
 
-## Features
+A yaml snippets extension for Rasa **3.x**.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-For example if there is an image subfolder under your extension project workspace:
 
-\!\[feature X\]\(images/feature-x.png\)
+## Usage
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+If Rasa Snippets doesn't work, add following text in settings.json.
 
-## Requirements
+```json
+{
+    "[yaml]": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        },
+        "editor.acceptSuggestionOnEnter": "on"
+    }
+}
+```
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
-## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Contributions
 
-For example:
+Not cover 100% Rasa yaml. And any contribution you make are greatly appreciated.
 
-This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
 
-## Known Issues
+## License
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+[MIT](https://github.com/uncle-lv/vscode-rasa-snippets/blob/main/LICENSE)
 
-## Release Notes
 
-Users appreciate release notes as you update your extension.
 
-### 1.0.0
+## Thanks
 
-Initial release of ...
+Thank Rasa Team for **Rasa**!
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
